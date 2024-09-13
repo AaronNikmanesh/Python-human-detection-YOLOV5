@@ -21,7 +21,9 @@ argparse
 FairMOT pre-trained models and YOLOv5 configurations
 For pedestrian detection:
 Download the FairMOT weights and configuration files from:
-FairMOT Weights[Download](https://github.com/ifzhang/FairMOT)
+
+FairMOT Weights:
+**[Download](https://github.com/ifzhang/FairMOT)**
 
 System Requirements:
 A good GPU is recommended for faster processing, although the code is optimized for CPU usage as well.
