@@ -4,8 +4,7 @@ A tool developed to analyze pedestrian interactions in natural environments, usi
 In crowded areas like city centers or parks, understanding how pedestrians avoid collisions is crucial for improving public safety and the design of shared spaces. I developed this AI-driven pedestrian interaction analysis tool, which processes real-time video streams to extract data on pedestrian behaviors such as path deviation, medial-lateral separation, and crowd dynamics.
 
 
-**Key Features:
-**
+**Key Features**
 Pedestrian Detection: Detects humans in the video frame using the FairMOT algorithm, which is based on YOLOv5 architecture.
 Trajectory Analysis: Tracks walking trajectories and calculates distance and deviation between pedestrians in a frame.
 Crowd Interaction: Identifies factors like crowd size, pedestrian distraction, and mobility constraints that influence collision avoidance behavior.
