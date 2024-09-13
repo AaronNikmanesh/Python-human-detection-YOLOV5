@@ -10,7 +10,6 @@ Trajectory Analysis: Tracks walking trajectories and calculates distance and dev
 Crowd Interaction: Identifies factors like crowd size, pedestrian distraction, and mobility constraints that influence collision avoidance behavior.
 You can find more details in my post: Pedestrian Interaction Analysis AI
 
-Demo: [Demo Link]
 
 Requirements:
 You will need the following to run this code:
@@ -22,7 +21,7 @@ argparse
 FairMOT pre-trained models and YOLOv5 configurations
 For pedestrian detection:
 Download the FairMOT weights and configuration files from:
-FairMOT Weights Download
+FairMOT Weights **Download**
 
 System Requirements:
 A good GPU is recommended for faster processing, although the code is optimized for CPU usage as well.
@@ -83,7 +82,7 @@ Modified by Mohammadamin Nikmanesh
 Email: amin.nikmanesh@gmail.com  
 Date: 2024-05-20
 
-**References**:
+**##References**:
 
 FairMOT: GitHub Link
 Perspective Transformations with OpenCV: Documentation Link
