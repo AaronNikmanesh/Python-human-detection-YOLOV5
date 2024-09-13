@@ -5,6 +5,7 @@ In crowded areas like city centers or parks, understanding how pedestrians avoid
 
 
 **Key Features**
+
 Pedestrian Detection: Detects humans in the video frame using the FairMOT algorithm, which is based on YOLOv5 architecture.
 Trajectory Analysis: Tracks walking trajectories and calculates distance and deviation between pedestrians in a frame.
 Crowd Interaction: Identifies factors like crowd size, pedestrian distraction, and mobility constraints that influence collision avoidance behavior.
