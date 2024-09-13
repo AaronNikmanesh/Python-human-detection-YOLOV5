@@ -3,9 +3,6 @@ A tool developed to analyze pedestrian interactions in natural environments, usi
 
 In crowded areas like city centers or parks, understanding how pedestrians avoid collisions is crucial for improving public safety and the design of shared spaces. I developed this AI-driven pedestrian interaction analysis tool, which processes real-time video streams to extract data on pedestrian behaviors such as path deviation, medial-lateral separation, and crowd dynamics.
 
- ![image](https://github.com/user-attachments/assets/a5c7797c-aa6d-4560-928f-4d262c2d5ec9)
-
-Example frame of a video. The area of interest (points 1 - 4) and coordinates for the pixel-to-cm conversion (points 5 - 7) are superimposed for illustrative purposes; these points are normally selected from the first video frame (see Methods for details about how these points are used). A bounding box with ID number surrounds each walking/standing pedestrian.
 
 Key Features:
 
