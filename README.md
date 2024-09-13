@@ -14,6 +14,19 @@ Trajectory Analysis: Tracks walking trajectories and calculates distance and dev
 Crowd Interaction: Identifies factors like crowd size, pedestrian distraction, and mobility constraints that influence collision avoidance behavior.
 You can find more details in my post: Pedestrian Interaction Analysis AI
 
+## File Structure:
+
+```plaintext
+main.py      : Detects and calculates distance between humans
+utils.py     : Contain functions to calculate distance, scale, transformed points
+plot.py      : Contain functions to draw bird eye view and frame
+models       : Contain YOLO weights and cfg (NOTE: weights file not present due to size)
+               It can be downloaded from here: https://pjreddie.com/media/files/yolov3.weights
+data         : Contains video samples
+output       : Contains output frames
+output_vid   : Contains output videos (Empty for now)
+```
+
 
 Requirements:
 You will need the following to run this code:
