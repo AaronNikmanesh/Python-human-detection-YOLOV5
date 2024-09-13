@@ -84,7 +84,7 @@ Modified by Mohammadamin Nikmanesh
 Email: amin.nikmanesh@gmail.com  
 Date: 2024-05-20
 
-**##References**:
+## References
 
 FairMOT: GitHub Link
 Perspective Transformations with OpenCV: Documentation Link
