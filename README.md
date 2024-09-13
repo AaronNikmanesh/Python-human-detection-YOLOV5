@@ -14,28 +14,17 @@ Trajectory Analysis: Tracks walking trajectories and calculates distance and dev
 Crowd Interaction: Identifies factors like crowd size, pedestrian distraction, and mobility constraints that influence collision avoidance behavior.
 You can find more details in my post: Pedestrian Interaction Analysis AI
 
-## File Structure:
-
-```plaintext
-main.py      : Detects and calculates distance between humans
-utils.py     : Contain functions to calculate distance, scale, transformed points
-plot.py      : Contain functions to draw bird eye view and frame
-models       : Contain YOLO weights and cfg (NOTE: weights file not present due to size)
-               It can be downloaded from here: https://pjreddie.com/media/files/yolov3.weights
-data         : Contains video samples
-output       : Contains output frames
-output_vid   : Contains output videos (Empty for now)
-```
-
-
-Requirements:
+## Requirements:
 You will need the following to run this code:
-
+```plaintext
 Python 3.6+
 OpenCV (CV2) 4.5.0+
 numpy 1.18.5
 argparse
 FairMOT pre-trained models and YOLOv5 configurations
+```
+
+
 For pedestrian detection:
 Download the FairMOT weights and configuration files from:
 
@@ -47,6 +36,7 @@ A good GPU is recommended for faster processing, although the code is optimized 
 
 File Structure:
 
+```plaintext
 main.py: Detects and calculates pedestrian trajectories and interactions.
 utils.py: Functions to compute distances and perspective transformations.
 plot.py: Functions for rendering results, including bird’s-eye view visualizations.
@@ -54,26 +44,29 @@ models/: Contains the pre-trained models and configuration files.
 data/: Sample videos for testing.
 output/: Stores processed frames and interaction results.
 output_vid/: Stores final output videos.
+
+```
+
 Usage: To run with the default directory structure:
-
-bash
-Copy code
+```plaintext
 python main.py
-If the paths for models or input videos are different:
+```
 
-bash
-Copy code
+If the paths for models or input videos are different:
+```plaintext
 python main.py --model='model path' --video_path='video file path' --output_dir='output directory' --output_vid='output video directory'
+```
 How It Works:
 
-Run the main script with the following command:
-bash
-Copy code
+1- Run the main script with the following command:
+```plaintext
 python main.py
-A graphical interface will appear, allowing you to draw a region of interest (ROI) and set a distance scale using 8 reference points. Four points will define the area of analysis, while the others help measure distances between pedestrians.
-The tool transforms the ROI into a bird’s-eye view to ensure accurate distance measurements and trajectory mapping.
+```
+2- A graphical interface will appear, allowing you to draw a region of interest (ROI) and set a distance scale using 8 reference points. Four points will define the area of analysis, while the others help measure distances between pedestrians.
+3- The tool transforms the ROI into a bird’s-eye view to ensure accurate distance measurements and trajectory mapping.
 FairMOT detects pedestrians in each frame, tracks their movements, and calculates the medial-lateral separation and deviation from their initial walking paths. These results are visualized both as a bird’s-eye view and on the original video frame.
-Output:
+
+**Output**:
 
 Bird’s-eye View: Shows pedestrian trajectories and distance lines between them.
 Processed Frames: Annotated video frames showing deviations and crowd dynamics.
